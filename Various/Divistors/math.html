@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+    <TITLE>因数破解器</TITLE>
+</HEAD>
+<BODY>
+<H1>因数破解器</H1>
+<P>使用说明：
+    <BR>在输入框输入一个数字，然后点击旁边的“查找因数”按钮就可以开始查找所输入数字的所有因数
+    <BR>由于本小工具使用的是暴力破解法，因此较大的数字需要更多的时间计算
+</P>
+<SCRIPT>
+    function Calc(){
+        var num = document.getElementById("awee").value;
+        var calcresult ="";
+        var calcresult2 ="";
+        for(var current = 1; current < num; current++) {
+            var temp = Math.round(num / current)
+            if (num/current == temp) {
+                calcresult = calcresult + current + "," + "\n"
+                calcresult2 = calcresult2 + current + ", "
+            }
+        }
+        var resulttext = "输入的数字为：" + num + ", 它的因数有： \n" + calcresult + num
+        var resulttext2 = "(" + num + ") -- " + calcresult2 + num + "\n"
+        alert(resulttext)
+        document.getElementById("history").innerText = document.getElementById("history").innerText + resulttext2
+    }
+    function verify(){
+        if (document.getElementById("awee").value < 0) {
+            alert("无法计算小于1的数字");
+        }
+        else {
+            if (document.getElementById("awee").value > 214783647) {
+                var LargeNumNotifer = window.confirm("输入的数字太大了，计算时间可能会相当长，甚至可能造成浏览器崩溃，是否继续？");
+                if (LargeNumNotifer == true) {
+                    Calc()
+                }
+            }
+            else {
+                Calc()
+            }
+        }
+    }
+</SCRIPT>
+<INPUT type="number" name="awee" id="awee">
+    <BUTTON type="submit" onclick="verify()">查找因数</BUTTON>
+<p id="history">历史记录：<BR></p>
+</BODY>
+</HTML>

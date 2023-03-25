@@ -1,0 +1,36 @@
+    #container 
+    {
+        height:auto;
+        width:auto;
+    }
+    #header
+    {
+        background-color: #ffa500;
+    }
+    #toptitle
+    {
+        margin-bottom:0px;
+    }
+    #menu
+    {
+        background-color:#FFD700;
+        height:800px;
+        width:10%;
+        float:left;
+    }
+    #content
+    {
+        background-color:#EEEEEE;
+        height:800px;
+        width:90%;
+        float:left;
+    }
+    #footer
+    {
+        background-color:#FFA500;
+        clear:both;
+        text-align:center;
+    }
+    html
+    {font-family:"标楷体","宋体";}
+    
