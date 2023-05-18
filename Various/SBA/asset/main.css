@@ -2,35 +2,110 @@
     {
         height:auto;
         width:auto;
+        margin: 0%;
     }
+
     #header
     {
         background-color: #ffa500;
     }
+
     #toptitle
     {
         margin-bottom:0px;
+        margin-top: 0px;
     }
+
     #menu
     {
-        background-color:#FFD700;
-        height:800px;
-        width:10%;
-        float:left;
+        background-color:darkorange;
+        height:30px;
     }
+
     #content
     {
         background-color:#EEEEEE;
-        height:800px;
-        width:90%;
+        height:850px;
+        width:100%;
         float:left;
     }
+
     #footer
     {
         background-color:#FFA500;
         clear:both;
         text-align:center;
     }
+
     html
-    {font-family:"标楷体","宋体";}
+    {
+        font-family:"标楷体","宋体";
+        background-color: #ffa500;
+    }
+
+    ul
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
     
+    li
+    {
+        float:left;
+    }
+
+    .votebtn
+    {
+        background-color: #ff7300;
+    }
+
+    li a, .dropbtn
+    {
+        display: inline-block;
+        min-width: 100px;
+        height: 30px;
+        text-align: center;
+        text-decoration: none;
+        background-color:#ff8c00;
+        color:black;
+        
+    }
+
+    li a:hover, .dropdown:hover
+    {
+        background-color: gold;
+    }
+
+    .dropdown
+    {
+        display: inline-block;
+    }
+    
+    .dropdown-content
+    {
+        display: none;
+        position: absolute;
+        background-color: #FFA900;
+        min-width: 100px;
+        text-align: center;
+    }
+
+    .dropdown-content a
+    {
+        color: black;
+        text-decoration: none;
+        display: block;
+        height: 30px;
+    }
+
+    .dropdown-content a:hover 
+    {
+        background-color: gold;
+    }
+
+    .dropdown:hover .dropdown-content
+    {
+        display: block;
+    }

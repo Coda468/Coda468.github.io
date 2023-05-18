@@ -3,41 +3,35 @@
 
 <head>
    <meta charset="utf-8">
-   <title>awee</title>
-   <link rel="stylesheet" type="text/css" href="main.css">
+   <title>甲乙丙中學2023年學生會選舉</title>
+   <link rel="stylesheet" type="text/css" href="asset/main.css">
 </head>
 
-<body>
+<body background-color='#FFD700'>
 
    <div id="container">
 
       <div id="header">
-         <h1 id="toptitle">學生會選舉</h1>
+         <img src="asset/ABC.png" height="100px"><BR>
+         <h1 id="toptitle">甲乙丙中學2023年學生會選舉 中心頁面</h1>
       </div>
 
       <div id="menu">
-         <table id="selection">
-            <tr>
-               <td><b>主頁</b></td>
-            </tr>
-            <tr>
-               <td>候選内閣</td>
-            </tr>
-            <tr>
-               <td>house1</td>
-            </tr>
-            <tr>
-               <td>house2</td>
-            </tr>
-            <tr>
-               <td>
-                  關於選舉
-               </td>
-            </tr>
-         </table>
+         <ul>
+            <li><a href="index.html">主頁</a></li>
+            <div class="dropdown">
+               <a href="houses.html" class="dropbtn">候選内閣</a>
+               <div class="dropdown-content">
+                  <a href="house1.html">house1</a>
+                  <a href="house2.html">house2</a>
+               </div>
+            </div>
+            <li><a href="about.html">關於選舉</a></li>
+            <li><a href="vote.html" class="votebtn">前往投票</a></li>
+         </ul>
       </div>
 
-      <div id="content">内容在这里</div>
+      <div id="content">關於</div>
 
       <div id="footer">12</div>
 
