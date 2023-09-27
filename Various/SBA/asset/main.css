@@ -26,7 +26,7 @@
     #content
     {
         background-color:#EEEEEE;
-        height:850px;
+        min-height: 799px;
         width:100%;
         float:left;
     }
