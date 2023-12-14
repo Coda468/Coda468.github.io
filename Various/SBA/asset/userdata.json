@@ -1,0 +1,18 @@
+{
+    "users": {
+      "data": [
+        {
+          "name": "ABC19121",
+          "psw": "19121"
+        },
+        {
+          "name": "ABC18025",
+          "psw": "18025"
+        },
+        {
+          "name": "ABCadmin",
+          "psw": "adminadmin"
+        }
+      ]
+    }
+  }
