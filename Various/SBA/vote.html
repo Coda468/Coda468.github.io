@@ -1,40 +1,45 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>甲乙丙中學2023年學生會選舉</title>
-    <style>
-        #vote {
-            background-color: white;
-            height: 50%;
-            width: 30%;
-            align-self: center;
-            padding: 20px;
-            margin: 20%;
-            border: 5px solid black;
-        }
+	<meta charset="utf-8">
+	<title>甲乙丙中學2023年學生會選舉</title>
+	<style>
+		body {
+			background-color: grey;
+		}
 
-        body {
-            background-color: grey;
-        }
-    </style>
+		#vote {
+			border: 2px;
+			margin: auto;
+			padding: 10px;
+			background-color: white;
+			align-self: center;
+			height: max-content;
+			width: max-content;
+		}
+
+		#vote div {
+			display: inline-block;
+			text-align: center;
+			height: max-content;
+			width: max-content;
+			margin: 5px;
+			padding: 5px;
+		}
+	</style>
+	<script src="asset/userdata.js">
+	</script>
 </head>
 
-<body>
-    <script>
-        userdata = fetch('/asset/userdata.json')
-
-        function {}
-    </script>
-    <div id="vote">
-        <p style="text-align: center;">請先登入學生賬戶</p>
-        <form style="text-align: center;">
-            用戶名稱<input type="text"><br>
-            用戶密碼<input type="password"><br><br>
-            <button>登入</button>
-            <button>返回</button>
-        </form>
-    </div>
+<body onload="myScript()">
+	<div id="vote">
+		<p id="welcome">temp</p>
+		<div id="solar"><img src="asset/solar.png" width="297" height="297"><BR><button
+				onclick="vote('SOLAR')">投票給<BR>SOLAR</button></div>
+		<div id="platform"><img src="asset/platform.png" width="297" height="297"><BR><button
+				onclick="vote('PLATFORM')">投票給<BR>PLATFORM</button></div>
+	</div>
 </body>
 
 </html>
